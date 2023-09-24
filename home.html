@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Calculator</h1>
+            <input type="text" class="display" id = 'result' disabled>
+            <div class="btn">
+                <input type="button" value="AC" onclick = "Clear()">
+                <input type="button" value="C" onclick ="Back('←')">
+                <input type="button" value="%" onclick = "AddItem('%')">
+                <input type="button" value="/" onclick = "AddItem('/')">
+                <br>
+                <input type="button" value="7" onclick = "AddItem('7')">
+                <input type="button" value="8" onclick = "AddItem('8')">
+                <input type="button" value="9" onclick = "AddItem('9')">
+                <input type="button" value="*" onclick = "AddItem('*')">
+                <br>
+                <input type="button" value="4" onclick = "AddItem('4')">
+                <input type="button" value="5" onclick = "AddItem('5')">
+                <input type="button" value="6" onclick = "AddItem('6')">
+                <input type="button" value="-" onclick = "AddItem('-')">
+                <br>
+                <input type="button" value="1" onclick = "AddItem('1')">
+                <input type="button" value="2" onclick = "AddItem('2')">
+                <input type="button" value="3" onclick = "AddItem('3')">
+                <input type="button" value="+" onclick = "AddItem('+')">
+                <br>
+                <input type="button" value="." onclick = "AddItem('.')">
+                <input type="button" value="0" onclick = "AddItem('0')">
+                <input type="button" value="=" class="equal" onclick = "Result()">
+                
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <script src = 'script.js' ></script>
+
+</body>
+</html>
